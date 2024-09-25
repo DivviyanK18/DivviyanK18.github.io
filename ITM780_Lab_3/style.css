@@ -1,0 +1,46 @@
+body { 
+    font-family: Arial
+    font-size: 12pt
+    background-color: #d86488
+    margin: 18pt; 
+}
+
+head(1) { 
+    font-size:22pt;
+    color: #fee6ef
+
+}
+
+head(2) { 
+    font-size:18pt;
+    color: #f9d4a2 
+
+}
+
+head(3) { 
+    font-size:16pt;
+    color: #b4c2e4   
+
+}
+
+paragraph {
+    font-size: 12pt;
+    colour:#c7b68b
+}
+
+a:link {
+    color: #6199fa
+}
+
+a:visited {
+    color: #005eff 
+}
+
+a:hover { 
+    color: #29b6e6 
+}
+
+a:active {
+    color: #b8edff 
+}
+
