@@ -26,11 +26,11 @@ paragraph {
 }
 
 a:link {
-    color: rgb(4, 244, 196);
+    color: #0ee4b2;
 }
 
 a:visited {
-    color: rgb(14, 75, 241);
+    color: #194cd8;
 }
 
 a:hover { 
