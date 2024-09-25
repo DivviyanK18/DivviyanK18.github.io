@@ -4,12 +4,10 @@ body {
     background-color: #d86488;
     margin: 18pt;
 }
-
-
-
 h1 { 
     font-size:22pt;
     color: #fee6ef;
+    font-weight: bold;
 }
 
 h2 { 
@@ -19,7 +17,7 @@ h2 {
 
 h3 { 
     font-size:16pt;
-    color: #b4c2e4; 
+    color: #e59e41; 
 }
 
 paragraph {
@@ -28,19 +26,15 @@ paragraph {
 }
 
 a:link {
-    color: #6199fa;
+    color: black;
 }
 
 a:visited {
-    color: #005eff;
+    color: purple;
 }
 
 a:hover { 
-    color: #29b6e6;
-}
-
-a:active {
-    color: #b8edff;
+    color: #009acd;
 }
 
 table {
@@ -50,7 +44,7 @@ table {
 
 td { 
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
 }
 
 div.text {
