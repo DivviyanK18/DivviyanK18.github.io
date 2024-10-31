@@ -1,32 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background-color: #d86488;
+    background-color: #B98EA7;
     margin: 18pt;
 }
 h1 { 
     font-size:22pt;
-    color: #b6a813;
+    color: #A57982;
     font-weight: bold;
 }
 
 h2 { 
     font-size:18pt;
-    color: #f9d4a2;
+    color: #F0D3F7;
 }
 
 h3 { 
     font-size:16pt;
-    color: #e59e41; 
+    color: #302F4D; 
 }
 
 p {
     font-size: 12pt;
-    color:#0ef10e;
+    color: #120D31;
 }
 
 a:link {
-    color: #0ee4b2;
+    color: #A57982;
 }
 
 a:visited {
