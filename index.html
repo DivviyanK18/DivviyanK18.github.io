@@ -63,12 +63,25 @@
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone">
             </p>
+            <h2>How Would You Like to Stay In Contact</h2>
             <p>
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject">
+                <input type="radio" id="cell" name="Contact" value="Cell">
+                " Cell "
+                <input type="radio" id="Email" name="Contact" value="Email">
+                " Email "
             </p>
             <p>
-                <label for="message">Message:</label>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="general">General Questions</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                    <option value="other">Other</option>
+            </select>
+            <br><br>
+            </p>
+            <p>
+                <label for="message">Write a Message:</label>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea>
             </p>
             <p>
