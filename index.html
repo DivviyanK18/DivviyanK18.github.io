@@ -7,6 +7,7 @@
     <title>Welcome to Divviyan Ketheesraj's Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- Setting up the navigation bar for each important section of webpage-->
 <nav>
     <a href="#Home">Home</a>
     <a href="#Education">Education</a>
@@ -14,7 +15,8 @@
     <a href="#Extracurricular">Extracurricular Activities</a>
     <a href="#Contact">Contact Me</a>
 </nav>
-<body>
+<body>  
+<!-- ID'ing each section while adding button to introduce user and show my image-->
 <section id="Home">
     <button id="nameButton">Enter Your Name</button>
     <p id="nameDisplay"></p>
@@ -25,7 +27,7 @@
         <p>My academic journey has been one I have truly enjoyed and will forever cherish. I've learnt so much throughout it that will be valuable in my future career. Below are details on my academic background, awards, and extracurriculars I've done over the years.</p>
     </header>
 </section>
-
+<!-- ID'ing section and putting Education info-->
     <section id="Education">
         <h2>Education</h2>
         <ul>
@@ -33,7 +35,7 @@
             <li><strong>Woburn Collegiate Institute</strong> – High School Diploma (2017 - 2021)</li>
         </ul> 
     </section>
-
+<!-- ID'ing section and putting Program info-->
     <section id="Program">
         <h2>Program & Courses</h2>
         <p>I am currently pursuing a Bachelor's degree of Commerce - Business Technology Management at Toronto Metropolitan University. This program has a strong mix of business management and technology courses that will prepare me for the business world as it transitions more with the technology field.</p>
@@ -41,14 +43,14 @@
         <h3>Most Useful Course:</h3>
         <p><strong>Fundamentals of Programming (ITM200)</strong> – I really enjoyed this Fundamentals of Programming course that I did in my 2nd year in BTM. I've always loved software and coding since I was a child, and this course helped build on my previous knowledge of Python and other coding basics. It helped me become more confident in programming and sparked a stronger love for it.</p>
     </section>
-
+<!-- ID'ing section and putting Awards info-->
     <section>
         <h2>Educational Awards</h2>
         <ul>
             <li>Honour Roll – Woburn Collegiate Institute (2020)</li>
         </ul>
     </section>
-
+<!-- ID'ing section and putting Extracurricular Activity info-->
     <section id="Extracurricular">
         <h2>Extracurricular Activities</h2>
         <ol>
@@ -56,11 +58,11 @@
             <li>Chess Club, Woburn Collegiate Institute (2021)</li>
         </ol>
     </section>
-
+<!-- ID'ing section and setting up Contact info-->
     <section id="Contact">
         <h2>Contact Me</h2>
         <form>
-            <p>
+            <p> <!-- Placing labels for Name, Email, and Phone-->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             </p>
@@ -73,13 +75,13 @@
                 <input type="tel" id="phone" name="phone">
             </p>
             <h2>How Would You Like to Stay In Contact</h2>
-            <p>
+            <p> <!-- Inputing Radio type for form elements-->
                 <input type="radio" id="cell" name="Contact" value="Cell">
                 " Cell "
                 <input type="radio" id="Email" name="Contact" value="Email">
                 " Email "
             </p>
-            <p>
+            <p> <!-- Making a drop-down options menu with potential titles for subject-->
                 <label for="subject">Subject:</label>
                 <select id="subject" name="subject" required>
                     <option value="general">General Questions</option>
@@ -89,7 +91,7 @@
             </select>
             <br><br>
             </p>
-            <p>
+            <p> <!-- Labeling Message and setting up a submit and reset button-->
                 <label for="message">Write a Message:</label>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea>
             </p>
@@ -99,7 +101,7 @@
             </p>
         </form>
     </section>
-
+<!-- Placing a footer with how to get more information and linking relevant websites-->
     <footer>
         <p>For more information about my professional career, please take a look at my <a href="https://www.linkedin.com/in/divviyan-ketheesraj" target="_blank">LinkedIn profile</a>.</p>
 
