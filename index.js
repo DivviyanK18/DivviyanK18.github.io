@@ -28,3 +28,22 @@ navLinks.forEach(link => {
         this.style.fontSize = '18px';
     });
 }); 
+// making the enlarge text and being able to change colour scheme for accesibility
+function enlargeText() {
+    document.body.style.fontSize = "1.2em";
+}
+
+function changeColors() {
+    document.body.style.backgroundColor = "C1B8C8";
+    document.body.style.color = "7A8B99";
+}
+
+// showing the alt text for the images
+function showAltText() {
+    const images = document.querySelectorAll(".accessible-img");
+    images.forEach(img => {
+        const altText = document.createElement("p");
+        altText.innerText = img.alt;
+        img.insertAdjacentElement("afterend", altText);
+    });
+}
