@@ -130,3 +130,15 @@ audio {
     display: block;
     margin: 0 auto;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4C243B;
+    color: #F0D3F7;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 2px solid #F0D3F7;
+}
