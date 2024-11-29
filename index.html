@@ -6,47 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Divviyan Ketheesraj's Website</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function showPage(pageID) {
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(pageID).style.display = 'block';
+        }
+        window.onload = () => showPage('Home'); 
+    </script> 
 </head>
-<!-- Setting up the navigation bar for each important section of webpage-->
-<nav>
-    <a href="#Home">Home</a>
-    <a href="#Education">Education</a>
-    <a href="Work Experience">Work Experience</a>
-    <a href="#Program">Program & Courses</a>
-    <a href="#Extracurricular">Extracurricular Activities</a>
-    <a href="#Contact">Contact Me</a>
-</nav>
-<body>  
+
+<body>
+    <nav>
+        <ul> <!-- Setting up the navigation bar for each important section of webpage-->
+            <li><a href= "#" onclick="showPage('Home')">Home</a></li>
+            <li><a href= "#" onclick="showPage('Education')">Education</a></li>
+            <li><a href= "#" onclick="showPage('Work_Experience')">Work Experience</a></li>
+            <li><a href= "#" onclick="showPage('SEO')">SEO</a></li>
+            <li><a href= "#" onclick="showPage('Contact')">Contact Me</a></li>
+        </ul>
+    </nav> 
+
 <!-- ID'ing each section while adding button to introduce user and show my image-->
 <section id="Home">
-    <button id="nameButton">Enter Your Name</button>
-    <p id="nameDisplay"></p>
-    <img id="profileImage" src="Face.jpeg" alt="Profile Image">
-
     <header>
-        <h1>Divviyan Ketheesraj</h1>
+        <h1>Welcome to Divviyan Ketheesraj's Website</h1>
         <p>My academic journey has been one I have truly enjoyed and will forever cherish. I've learnt so much throughout it that will be valuable in my future career. Below are details on my academic background, awards, and extracurriculars I've done over the years.</p>
+        <img id="profileImage" src="Face.jpeg" alt="Profile Image">
+        <!-- Setting up accessibility buttons to change colours or enlarge text -->
+        <button onclick="enlargeText()">Enlarge Text</button>
+        <button onclick="changeColors()">Change Colors</button>
     </header>
-</section>
 
- <!-- Setting up accessibility buttons to change colours or enlarge text -->
- <section id="Accessibility">
-    <button onclick="enlargeText()">Enlarge Text</button>
-    <button onclick="changeColors()">Change Colors</button>
-</section>
-
-<!-- Setting up my voice media into the website -->
-<section id="Media">
+    <!-- Setting up my voice media into the website -->
     <h2>My voice</h2>
     <audio controls>
         <source src="Div_Voice.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
     <figcaption>An audio file playing my voice</figcaption>
-</section>
 
-<!-- Setting up the accessibility button and the 3 images of me with descriptions and date -->
-<section id="Images">
+    <!-- Setting up the accessibility button and the 3 images of me with descriptions and date -->
     <h2>My Images</h2>
     <img src="Div_Pool.jpg" alt="This is me in our AirBnB pool in Florida, July 20, 2024" class="accessible-img">
     <img src="Div_RB.jpg" alt="This is me infront of the RB20 at the Formula 1 Exhibition in Toronto, August 1, 2024" class="accessible-img">
@@ -54,103 +55,95 @@
     <button onclick="showAltText()">Show Image Descriptions</button>
 </section>
 
-<!-- ID'ing section and putting Education info-->
-    <section id="Education">
+<!-- ID'ing section and putting Education, Program, and Extracurricular info-->
+<section id="Education" style="display:none;"> 
         <h2>Education</h2>
         <ul>
             <li><strong>Toronto Metropolitan University</strong> – Business Technology Management (BTM) Co-op (2021 - Present)</li>
             <li><strong>Woburn Collegiate Institute</strong> – High School Diploma (2017 - 2021)</li>
         </ul> 
-    </section>
-<!-- ID'ing section and putting Work Experience info-->
-    <section id="Work Experience">
-        <h2>Work Experience</h2>
-        <ul>
-            <li><strong>Digital Advisor</strong> – Ontario Chamber of Commerce (2023)</li>
-        </ul> 
-    </section>
-<!-- ID'ing section and putting Program info-->
-    <section id="Program">
-        <h2>Program & Courses</h2>
-        <p>I am currently pursuing a Bachelor's degree of Commerce - Business Technology Management at Toronto Metropolitan University. This program has a strong mix of business management and technology courses that will prepare me for the business world as it transitions more with the technology field.</p>
+            <h3>Program Details</h3>
+            <p>I am currently pursuing a Bachelor's degree of Commerce - Business Technology Management at Toronto Metropolitan University. This program has a strong mix of business management and technology courses that will prepare me for the business world as it transitions more with the technology field.</p>
+            <h3>Most Useful Course:</h3>
+            <p><strong>Fundamentals of Programming (ITM200)</strong> – I really enjoyed this Fundamentals of Programming course that I did in my 2nd year in BTM. I've always loved software and coding since I was a child, and this course helped build on my previous knowledge of Python and other coding basics. It helped me become more confident in programming and sparked a stronger love for it.</p>
+            <h2>Extracurricular Activities</h2>
+                <ol>
+                    <li>Badminton Team Player, Woburn Collegiate Institute (2021)</li>
+                    <li>Chess Club, Woburn Collegiate Institute (2021)</li>
+                </ol>
+</section>
 
-        <h3>Most Useful Course:</h3>
-        <p><strong>Fundamentals of Programming (ITM200)</strong> – I really enjoyed this Fundamentals of Programming course that I did in my 2nd year in BTM. I've always loved software and coding since I was a child, and this course helped build on my previous knowledge of Python and other coding basics. It helped me become more confident in programming and sparked a stronger love for it.</p>
-    </section>
-<!-- ID'ing section and putting Awards info-->
-    <section>
-        <h2>Educational Awards</h2>
-        <ul>
-            <li>Honour Roll – Woburn Collegiate Institute (2020)</li>
-        </ul>
-    </section>
-<!-- ID'ing section and putting Extracurricular Activity info-->
-    <section id="Extracurricular">
-        <h2>Extracurricular Activities</h2>
-        <ol>
-            <li>Badminton Team Player, Woburn Collegiate Institute (2021)</li>
-            <li>Chess Club, Woburn Collegiate Institute (2021)</li>
-        </ol>
-    </section>
+
+<!-- ID'ing section and putting Work Experience info-->
+<section id="Work_Experience" style="display:none;">
+    <h2>Work Experience</h2>
+    <ul>
+        <li><strong>Digital Advisor</strong> – Ontario Chamber of Commerce (2023)</li>
+         <li><strong>Faculty-In Charge</strong> – City of Toronto (2022 - Present)</li>
+      </ul> 
+ </section>
+
+ <!-- ID'ing section and putting SEO info-->
+ <section id="SEO" style="display:none;">
+    <h2>SEO</h2>
+    <p> SEO info</p>
+</section>
+
 <!-- ID'ing section and setting up Contact info-->
-    <section id="Contact">
-        <h2>Contact Me</h2>
-        <form>
-            <p> <!-- Placing labels for Name, Email, and Phone-->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </p>
-            <p>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </p>
-            <p>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-            </p>
-            <h2>How Would You Like to Stay In Contact</h2>
-            <p> <!-- Inputing Radio type for form elements-->
-                <input type="radio" id="cell" name="Contact" value="Cell">
-                " Cell "
-                <input type="radio" id="Email" name="Contact" value="Email">
-                " Email "
-            </p>
-            <p> <!-- Making a drop-down options menu with potential titles for subject-->
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="general">General Questions</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="support">Support</option> 
-                    <option value="other">Other</option>
-            </select>
-            <br><br>
-            </p>
-            <p> <!-- Labeling Message and setting up a submit and reset button-->
-                <label for="message">Write a Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-            </p>
-            <p>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-            </p>
-        </form>
+<section id="Contact" style="display:none;">
+    <h2>Contact Me</h2>
+    <form>
+        <p> <!-- Placing labels for Name, Email, and Phone-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+
+        <h2>How Would You Like to Stay In Contact</h2>
+        <p> <!-- Inputing Radio type for form elements-->
+            <input type="radio" id="cell" name="Contact" value="Cell">
+            " Cell "
+            <input type="radio" id="Email" name="Contact" value="Email">
+            " Email "
+            <input type="radio" id="Both" name="Contact" value="Both">
+            " Both "
+        </p>
+
+        <p> <!-- Making a drop-down options menu with potential titles for subject-->
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="general">General Questions</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Support</option> 
+                <option value="other">Other</option>
+        </select>
+        <br><br>
+        </p>
+
+        <p> <!-- Labeling Message and setting up a submit and reset button-->
+            <label for="message">Write a Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
     </section>
+
 <!-- Placing a footer with how to get more information and linking relevant websites-->
     <footer>
         <p>For more information about my professional career, please take a look at my <a href="https://www.linkedin.com/in/divviyan-ketheesraj" target="_blank">LinkedIn profile</a>.</p>
-
-        <table>
-            <tr>
-                <td><a href="https://www.linkedin.com/in/divviyan-ketheesraj">My LinkedIn</a></td>
-                <td>This link takes you to my LinkedIn page</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.nhl.com/flames/">Calgary Flames</a></td>
-                <td>This link takes you to Calgary Flames Homepage</td>
-            </tr>
-        </table>
+        <h2>©Copyright 2024 Divviyan Ketheesraj</h2>
     </footer>
-
     <script src="index.js"></script>    
 </body>
 </html>
+
