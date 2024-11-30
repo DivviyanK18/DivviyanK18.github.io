@@ -4,6 +4,7 @@ body {
     background-color: #B98EA7;
     margin: 18pt;
     padding-bottom: 150px;
+    min-height: 80vh;
 }
 h1 { 
     font-size:22pt;
@@ -141,4 +142,8 @@ footer {
     padding: 5px 0;
     text-align: center;
     border-top: 1px solid #F0D3F7;
+    height: 50px;
+}
+.references {
+    margin-bottom: 100px;
 }
