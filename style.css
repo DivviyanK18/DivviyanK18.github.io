@@ -125,6 +125,27 @@ img {
     display: block;
     margin: 20px auto;
     max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.accessible-img {
+    width: 125px;
+    height: auto;
+    margin:10px;
+    margin-bottom: 75px;
+    display: inline-block;
+    border: 2px solid #ccc;
+}
+
+figure {
+    margin-bottom: 75px;
+}
+
+#media figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #000000;
+    margin-bottom: 75px;
 }
 
 audio {
@@ -147,3 +168,4 @@ footer {
 .references {
     margin-bottom: 100px;
 }
+
